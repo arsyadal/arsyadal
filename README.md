@@ -22,7 +22,6 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/arsyadal/arsyadal/output/snake.svg" alt="Snake animation" />
 
 ###
 
