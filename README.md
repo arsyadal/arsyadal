@@ -29,7 +29,7 @@
 
 ###
 
-<p align="left">I'm Muhammad Arsyad Alghital from Indonesia<br><br>- 🎓 I’m Student at Telkom University, Information System<br>- 📚 I'm currently learning Typescript and Go<br>- ⚡ In my free time I usually watch tech-videos
+<p align="left">I'm Muhammad Arsyad Alghital from Indonesia<br><br>- 🎓 Freshgraduate Bachelor Information System of Telkom University, I'm Looking for an oppurtunity<br>- 📚 I'm currently learning AI to integrate better website<br>- ⚡ In my free time I usually read article and watch some tech videos to keep relevant in tech industries.
   
 ###
 
