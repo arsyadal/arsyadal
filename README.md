@@ -10,12 +10,6 @@ C#, Go, TypeScript, JavaScript, Python. Enterprise backends, AI pipelines, and o
 
 ## Projects
 
-### [facebook/react](https://github.com/facebook/react) — open-source contributor
-
-3 PRs to React core: compiler prop destructure optimization, DevTools profiler flamegraph fix for missing HOC names, and optional chaining preservation in hook callbacks.
-
-`JavaScript` `React Compiler` `DevTools`
-
 ### [pahamproduk.ai](https://github.com/arsyadal/pahamproduk.ai) — RAG-powered product knowledge engine
 
 Go backend with vector embeddings (Qdrant), Groq LLM integration, and ingestion pipeline. TypeScript frontend. Dockerized full-stack deployment.
@@ -39,6 +33,18 @@ Multi-layer C# backend with Azure Identity, JWT Bearer auth, and RESTful API. Bu
 Layered instruction system that steers AI toward sharper hierarchy, stronger structure, and more intentional UI output. Style modules, benchmarks, and examples included.
 
 `Python` `Prompt Engineering` `AI` `Frontend Generation`
+
+---
+
+## Open Source
+
+Active contributor to major open-source projects.
+
+### [facebook/react](https://github.com/facebook/react)
+
+3 PRs to React core: compiler prop destructure optimization, DevTools profiler flamegraph fix for missing HOC names, and optional chaining preservation in hook callbacks.
+
+`JavaScript` `React Compiler` `DevTools`
 
 ---
 
