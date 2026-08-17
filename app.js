@@ -1,0 +1,164 @@
+const availableSkills = [
+  { id: 'rust', label: 'Rust' },
+  { id: 'ts', label: 'TypeScript' },
+  { id: 'js', label: 'JavaScript' },
+  { id: 'python', label: 'Python' },
+  { id: 'go', label: 'Go' },
+  { id: 'c', label: 'C' },
+  { id: 'cpp', label: 'C++' },
+  { id: 'react', label: 'React' },
+  { id: 'nextjs', label: 'Next.js' },
+  { id: 'tailwind', label: 'Tailwind CSS' },
+  { id: 'nodejs', label: 'Node.js' },
+  { id: 'fastapi', label: 'FastAPI' },
+  { id: 'postgres', label: 'PostgreSQL' },
+  { id: 'sqlite', label: 'SQLite' },
+  { id: 'redis', label: 'Redis' },
+  { id: 'docker', label: 'Docker' },
+  { id: 'kubernetes', label: 'Kubernetes' },
+  { id: 'githubactions', label: 'GitHub Actions' },
+  { id: 'git', label: 'Git' },
+  { id: 'linux', label: 'Linux' }
+];
+
+let selectedSkills = ['rust', 'ts', 'react', 'nextjs', 'postgres', 'docker', 'linux'];
+
+function init() {
+  const container = document.getElementById('skills-selector');
+  container.innerHTML = '';
+
+  availableSkills.forEach(skill => {
+    const chip = document.createElement('div');
+    chip.className = `skill-chip ${selectedSkills.includes(skill.id) ? 'active' : ''}`;
+    chip.innerText = skill.label;
+    chip.onclick = () => {
+      if (selectedSkills.includes(skill.id)) {
+        selectedSkills = selectedSkills.filter(s => s !== skill.id);
+      } else {
+        selectedSkills.push(skill.id);
+      }
+      chip.classList.toggle('active');
+      renderMarkdown();
+    };
+    container.appendChild(chip);
+  });
+
+  // Attach input listeners
+  ['input-username', 'input-name', 'input-headline', 'input-website'].forEach(id => {
+    document.getElementById(id).addEventListener('input', renderMarkdown);
+  });
+
+  // Attach checkbox listeners
+  ['toggle-banner', 'toggle-stats', 'toggle-snake', 'toggle-projects', 'toggle-blog'].forEach(id => {
+    document.getElementById(id).addEventListener('change', renderMarkdown);
+  });
+
+  // Copy button
+  document.getElementById('btn-copy').addEventListener('click', () => {
+    const code = document.getElementById('output-markdown').innerText;
+    navigator.clipboard.writeText(code).then(() => {
+      const copyText = document.getElementById('copy-text');
+      copyText.innerText = '✅ Copied to Clipboard!';
+      setTimeout(() => {
+        copyText.innerText = '📋 Copy Markdown';
+      }, 2000);
+    });
+  });
+
+  renderMarkdown();
+}
+
+function renderMarkdown() {
+  const username = document.getElementById('input-username').value.trim() || 'username';
+  const name = document.getElementById('input-name').value.trim() || 'Your Name';
+  const headline = document.getElementById('input-headline').value.trim() || 'Software Engineer';
+  const website = document.getElementById('input-website').value.trim() || 'https://example.com';
+
+  const showBanner = document.getElementById('toggle-banner').checked;
+  const showStats = document.getElementById('toggle-stats').checked;
+  const showSnake = document.getElementById('toggle-snake').checked;
+  const showProjects = document.getElementById('toggle-projects').checked;
+  const showBlog = document.getElementById('toggle-blog').checked;
+
+  let md = '';
+
+  if (showBanner) {
+    const bannerText = encodeURIComponent(`Hi, I'm ${name} 👋`);
+    const bannerDesc = encodeURIComponent(`${headline}`);
+    md += `<div align="center">\n`;
+    md += `  <picture>\n`;
+    md += `    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,5&height=190&section=header&text=${bannerText}&fontSize=38&fontAlignY=38&desc=${bannerDesc}&descAlignY=58&descAlign=50&theme=dark" />\n`;
+    md += `    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,28,30&height=190&section=header&text=${bannerText}&fontSize=38&fontAlignY=38&desc=${bannerDesc}&descAlignY=58&descAlign=50&theme=light" />\n`;
+    md += `    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=190&section=header&text=${bannerText}&fontSize=38" alt="Banner" width="100%" />\n`;
+    md += `  </picture>\n\n`;
+    md += `  <p align="center">\n`;
+    md += `    <a href="${website}"><img src="https://img.shields.io/badge/Website-2563EB?style=flat-square&logo=safari&logoColor=white" alt="Website" /></a>\n`;
+    md += `    <a href="https://linkedin.com/in/${username}"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>\n`;
+    md += `    <a href="mailto:contact@${username}.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>\n`;
+    md += `  </p>\n`;
+    md += `</div>\n\n---\n\n`;
+  }
+
+  md += `### 👨‍💻 About Me\n\n`;
+  md += `- 🔭 **Currently focused on:** ${headline}\n`;
+  md += `- 🌱 **Continuous Learning:** Scalable architectures & modern open-source tooling\n`;
+  md += `- 🌐 **Portfolio & Blog:** [${website}](${website})\n\n---\n\n`;
+
+  if (selectedSkills.length > 0) {
+    const skillList = selectedSkills.join(',');
+    md += `### 🛠️ Tech Stack & Toolkit\n\n`;
+    md += `<p align="left">\n`;
+    md += `  <img src="https://skillicons.dev/icons?i=${skillList}" alt="Tech Stack" />\n`;
+    md += `</p>\n\n---\n\n`;
+  }
+
+  if (showProjects) {
+    md += `### 🚀 Featured Projects\n\n`;
+    md += `| Project | Description | Tech Stack | Links |\n`;
+    md += `| :--- | :--- | :--- | :---: |\n`;
+    md += `| **⚡ Project Alpha** | High-performance core service engine. | \`Rust\` \`PostgreSQL\` | [Repo](https://github.com/${username}) |\n`;
+    md += `| **🛡️ Dev Engine** | Modern automated workflow utility. | \`TypeScript\` \`Docker\` | [Repo](https://github.com/${username}) |\n\n---\n\n`;
+  }
+
+  if (showStats) {
+    md += `### 📊 GitHub Analytics\n\n`;
+    md += `<div align="center">\n`;
+    md += `  <picture>\n`;
+    md += `    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />\n`;
+    md += `    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=default&hide_border=true&count_private=true" />\n`;
+    md += `    <img src="https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&hide_border=true" alt="Stats" />\n`;
+    md += `  </picture>\n`;
+    md += `  <picture>\n`;
+    md += `    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&layout=compact&theme=tokyonight&hide_border=true" />\n`;
+    md += `    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&layout=compact&theme=default&hide_border=true" />\n`;
+    md += `    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&layout=compact&hide_border=true" alt="Languages" />\n`;
+    md += `  </picture>\n`;
+    md += `</div>\n\n---\n\n`;
+  }
+
+  if (showSnake) {
+    md += `### 🐍 Contribution Graph\n\n`;
+    md += `<div align="center">\n`;
+    md += `  <picture>\n`;
+    md += `    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/${username}/${username}/output/github-snake-dark.svg" />\n`;
+    md += `    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/${username}/${username}/output/github-snake.svg" />\n`;
+    md += `    <img alt="Snake Game" src="https://raw.githubusercontent.com/${username}/${username}/output/github-snake.svg" width="100%" />\n`;
+    md += `  </picture>\n`;
+    md += `</div>\n\n`;
+  }
+
+  if (showBlog) {
+    md += `---\n\n### ✍️ Recent Blog Posts\n`;
+    md += `<!-- BLOG-POST-LIST:START -->\n`;
+    md += `<!-- Automatically populated via GitHub Actions -->\n`;
+    md += `<!-- BLOG-POST-LIST:END -->\n\n`;
+  }
+
+  md += `<div align="center">\n`;
+  md += `  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" alt="Footer" />\n`;
+  md += `</div>\n`;
+
+  document.getElementById('output-markdown').innerText = md;
+}
+
+document.addEventListener('DOMContentLoaded', init);

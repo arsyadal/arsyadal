@@ -1,13 +1,14 @@
 <div align="center">
 
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,5&height=200&section=header&text=Beautify%20GitHub%20Profile%20✨&fontSize=42&fontAlignY=38&desc=The%20Modern%20Guide,%20Templates,%20and%20Automations%20for%20GitHub%20Profiles&descAlignY=58&descAlign=50&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,28,30&height=200&section=header&text=Beautify%20GitHub%20Profile%20✨&fontSize=42&fontAlignY=38&desc=The%20Modern%20Guide,%20Templates,%20and%20Automations%20for%20GitHub%20Profiles&descAlignY=58&descAlign=50&theme=light" />
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Beautify%20GitHub%20Profile%20✨&fontSize=42" alt="Beautify GitHub Profile" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,5&height=200&section=header&text=Make%20Ur%20GitHub%20Profile%20Beautiful%20✨&fontSize=38&fontAlignY=38&desc=The%20Modern%20Guide,%20Templates,%20and%20Automations%20for%20GitHub%20Profiles&descAlignY=58&descAlign=50&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,28,30&height=200&section=header&text=Make%20Ur%20GitHub%20Profile%20Beautiful%20✨&fontSize=38&fontAlignY=38&desc=The%20Modern%20Guide,%20Templates,%20and%20Automations%20for%20GitHub%20Profiles&descAlignY=58&descAlign=50&theme=light" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Make%20Ur%20GitHub%20Profile%20Beautiful%20✨&fontSize=38" alt="Make Ur GitHub Profile Beautiful" width="100%" />
   </picture>
 
   <p align="center">
-    <b>Panduan Lengkap, Template Modern, dan Automasi GitHub Actions Siap Pakai untuk Mempercantik Profil GitHub Anda.</b>
+    <b>🌟 "Make your GitHub profile beautiful"</b><br/>
+    <i>Panduan Lengkap, Template Modern, dan Automasi GitHub Actions Siap Pakai untuk Mempercantik Profil GitHub Anda.</i>
   </p>
 
   <p align="center">

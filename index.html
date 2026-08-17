@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Make Ur GitHub Profile Beautiful ✨ — Interactive Profile Generator</title>
+  <meta name="description" content="Generate beautiful, adaptive, recruiter-friendly GitHub Profile READMEs with live stats, snake animations, and tech badges in seconds." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-sparkle">✨</span>
+        <span class="logo-text">Beautify<strong>GH</strong></span>
+      </div>
+      <div class="nav-links">
+        <a href="TOOLKIT_GUIDE.md" class="nav-link">Toolkit Guide</a>
+        <a href="https://github.com/arsyadal/arsyadal" target="_blank" class="nav-btn">GitHub Profile</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="hero-section">
+    <div class="container hero-container">
+      <div class="badge-pill">🚀 Open Source GitHub Toolkit</div>
+      <h1 class="hero-title">Make your GitHub profile <span class="gradient-text">beautiful</span>.</h1>
+      <p class="hero-subtitle">Generate modern, Dark/Light adaptive, recruiter-friendly GitHub profile READMEs in seconds with zero-bug workflows.</p>
+    </div>
+
+    <div class="container generator-grid">
+      <!-- CONFIGURATION PANEL -->
+      <div class="card config-panel">
+        <h2 class="section-title">⚙️ Configure Profile</h2>
+        
+        <div class="form-group">
+          <label for="input-username">GitHub Username</label>
+          <input type="text" id="input-username" placeholder="e.g. arsyadal" value="arsyadal" />
+        </div>
+
+        <div class="form-group">
+          <label for="input-name">Full Name</label>
+          <input type="text" id="input-name" placeholder="e.g. Arsyad Alghital" value="Arsyad Alghital" />
+        </div>
+
+        <div class="form-group">
+          <label for="input-headline">Headline / Role</label>
+          <input type="text" id="input-headline" placeholder="e.g. Systems & Software Engineer" value="Systems & Software Engineer" />
+        </div>
+
+        <div class="form-group">
+          <label for="input-website">Website / Portfolio</label>
+          <input type="text" id="input-website" placeholder="https://arsyad.site" value="https://arsyad.site" />
+        </div>
+
+        <div class="form-group">
+          <label>Tech Stack Icons</label>
+          <div class="skills-selector" id="skills-selector">
+            <!-- Dynamically populated skills -->
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Feature Toggles</label>
+          <div class="toggle-list">
+            <label class="checkbox-label">
+              <input type="checkbox" id="toggle-banner" checked />
+              <span>Animated Header Banner</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="toggle-stats" checked />
+              <span>Adaptive GitHub Stats Cards</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="toggle-snake" checked />
+              <span>Snake Contribution Grid</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="toggle-projects" checked />
+              <span>Featured Projects Table</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="toggle-blog" checked />
+              <span>Dynamic Blog RSS Section</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREVIEW & CODE PANEL -->
+      <div class="card preview-panel">
+        <div class="preview-header">
+          <h2 class="section-title">📄 Generated README.md</h2>
+          <button id="btn-copy" class="btn-primary">
+            <span id="copy-text">📋 Copy Markdown</span>
+          </button>
+        </div>
+
+        <div class="code-wrapper">
+          <pre><code id="output-markdown"></code></pre>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p><b>Make your GitHub profile beautiful</b> • Built with ❤️ for open-source developers.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
