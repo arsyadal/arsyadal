@@ -113,16 +113,16 @@
 
   <br/><br/>
 
-  <!-- Stats & Top Languages Card (Adaptive Theme) -->
+  <!-- Top Languages by Commit & Activity Cards -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api?username=arsyadal&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-eight-theta.vercel.app/api?username=arsyadal&show_icons=true&theme=default&hide_border=true&count_private=true" />
-    <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=arsyadal&show_icons=true&hide_border=true" alt="GitHub Stats" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arsyadal&theme=tokyonight" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arsyadal&theme=default" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arsyadal" alt="Top Languages by Commit" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=arsyadal&layout=compact&theme=tokyonight&hide_border=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=arsyadal&layout=compact&theme=default&hide_border=true" />
-    <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=arsyadal&layout=compact&hide_border=true" alt="Top Languages" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=arsyadal&theme=tokyonight" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=arsyadal&theme=default" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=arsyadal" alt="Profile Details" />
   </picture>
 
 </div>
