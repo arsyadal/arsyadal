@@ -1,0 +1,80 @@
+name: Ultimate Profile Automation (Snake, 3D Contrib & Blog Sync)
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  # 1. GENERATE CONTRIBUTION SNAKE GAME (LIGHT & DARK SVG)
+  snake-animation:
+    name: 🐍 Generate Snake Animation
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Generate SVGs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.svg?color_snake=orange&color_dots=#0d1117,#0e4429,#006d32,#26a641,#39d353
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # 2. GENERATE 3D CONTRIBUTION GRAPH
+  profile-3d-contrib:
+    name: 📊 Generate 3D Contribution Graph
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate 3D Graphs
+        uses: yoshi389111/github-profile-3d-contrib@0.7.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Commit 3D Graph files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A profile-3d-contrib/
+          git commit -m "chore: update 3D contribution graph" || exit 0
+          git push
+
+  # 3. SYNC LATEST BLOG POSTS VIA RSS
+  blog-post-sync:
+    name: ✍️ Sync Latest Blog Posts
+    needs: [profile-3d-contrib]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Pull RSS Feed & Update README
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          # Change this to your Medium, Dev.to, Hashnode, Substack, or personal blog RSS URL
+          # Medium: https://medium.com/feed/@yourusername
+          # Dev.to: https://dev.to/feed/yourusername
+          feed_list: "https://dev.to/feed/github"
+          max_post_count: 5
+          readme_path: "README.md"
+          template: "$newline - [$title]($url) — _($date)_"
+          date_format: "mmm d, yyyy"

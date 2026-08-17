@@ -1,0 +1,30 @@
+name: Latest Blog Posts Sync
+
+on:
+  schedule:
+    # Run once daily
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme-with-blog:
+    name: Update README with latest blog posts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Pull RSS Feed & Update README
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          # Replace with your Medium, Dev.to, Hashnode, Substack, or custom RSS feed URL
+          # Example Medium: https://medium.com/feed/@yourusername
+          # Example Dev.to: https://dev.to/feed/yourusername
+          feed_list: "https://dev.to/feed/github"
+          max_post_count: 5
+          readme_path: "README.md"
+          template: "$newline - [$title]($url) ($date)"
+          date_format: "mmm d, yyyy"
