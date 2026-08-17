@@ -106,23 +106,23 @@
 
   <!-- Streak Stats Card (Adaptive Theme) -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=arsyadal&theme=tokyonight&hide_border=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=arsyadal&theme=default&hide_border=true" />
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=arsyadal&hide_border=true" alt="Streak Stats" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=arsyadal&theme=tokyonight&hide_border=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=arsyadal&theme=default&hide_border=true" />
+    <img src="https://streak-stats.demolab.com/?user=arsyadal&hide_border=true" alt="Streak Stats" />
   </picture>
 
   <br/><br/>
 
   <!-- Stats & Top Languages Card (Adaptive Theme) -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=arsyadal&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=arsyadal&show_icons=true&theme=default&hide_border=true&count_private=true" />
-    <img src="https://github-readme-stats.vercel.app/api?username=arsyadal&show_icons=true&hide_border=true" alt="GitHub Stats" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api?username=arsyadal&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-eight-theta.vercel.app/api?username=arsyadal&show_icons=true&theme=default&hide_border=true&count_private=true" />
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=arsyadal&show_icons=true&hide_border=true" alt="GitHub Stats" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=arsyadal&layout=compact&theme=tokyonight&hide_border=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=arsyadal&layout=compact&theme=default&hide_border=true" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arsyadal&layout=compact&hide_border=true" alt="Top Languages" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=arsyadal&layout=compact&theme=tokyonight&hide_border=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=arsyadal&layout=compact&theme=default&hide_border=true" />
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=arsyadal&layout=compact&hide_border=true" alt="Top Languages" />
   </picture>
 
 </div>
