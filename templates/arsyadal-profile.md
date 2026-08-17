@@ -28,6 +28,13 @@
     </a>
   </p>
 
+  <!-- ==================== PROMO: BEAUTIFY-GH ==================== -->
+  <p align="center">
+    <a href="https://github.com/arsyadal/beautify-gh" target="_blank">
+      <img src="https://img.shields.io/badge/✨_Make_Ur_GitHub_Profile_Beautiful-Try_Beautify--GH-7C3AED?style=for-the-badge&logo=githubactions&logoColor=white" alt="Try Beautify-GH" />
+    </a>
+  </p>
+
 </div>
 
 ---
@@ -48,6 +55,7 @@
 
 | Project | Description | Stack | Quick Links |
 | :--- | :--- | :--- | :---: |
+| **✨ [beautify-gh](https://github.com/arsyadal/beautify-gh)** | *Make your GitHub profile beautiful.* Modern open-source toolkit, zero-bug automations & generator. | `Markdown` `Actions` `Web` | [Generator →](https://arsyadal.github.io/beautify-gh) • [Repo](https://github.com/arsyadal/beautify-gh) |
 | **🦀 [db-eye](https://github.com/arsyadal/db-eye)** | Lightweight and blazingly fast database introspection & monitoring engine. | `Rust` `SQL` `CLI` | [Repository →](https://github.com/arsyadal/db-eye) |
 | **🦀 [contextlint](https://github.com/arsyadal/contextlint)** | Context analysis and automated linting utility for modern codebases. | `Rust` `AST` `Linter` | [Repository →](https://github.com/arsyadal/contextlint) |
 | **🤖 [runbook-ai](https://github.com/arsyadal/runbook-ai)** | AI-assisted operational runbooks and automated incident response runner. | `Rust` `LLM` `DevOps` | [Repository →](https://github.com/arsyadal/runbook-ai) |
