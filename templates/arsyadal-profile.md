@@ -46,8 +46,10 @@
 📍 Location     : Karawang, Indonesia
 🌐 Portfolio    : https://arsyad.site
 ⚡ Focus        : Systems programming in Rust, developer tooling, AI integrations & TypeScript architectures.
-💡 Philosophy   : "I have written code before — now building performant, reliable tools for engineers."
+💡 Philosophy   : "We are what we repeatedly do. Excellence, then, is not an act, but a habit."
 ```
+
+> 🔨 **Dedicated to the Craft:** Practicing 30+ minutes every day outside daily work to refine systems engineering, explore emerging technologies, and build open-source tools.
 
 ---
 
