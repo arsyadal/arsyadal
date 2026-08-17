@@ -1,16 +1,16 @@
 <div align="center">
 
-  <!-- ==================== ADAPTIVE HEADER BANNER ==================== -->
+  <!-- ==================== DYNAMIC HEADER BANNER (ADAPTIVE THEME) ==================== -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,5&height=190&section=header&text=Hi,%20I'm%20Arsyad%20Alghital%20👋&fontSize=38&fontAlignY=38&desc=Systems%20%26%20Software%20Engineer%20•%20Rust%20%26%20TypeScript%20Craftsman&descAlignY=58&descAlign=50&theme=dark" />
     <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,28,30&height=190&section=header&text=Hi,%20I'm%20Arsyad%20Alghital%20👋&fontSize=38&fontAlignY=38&desc=Systems%20%26%20Software%20Engineer%20•%20Rust%20%26%20TypeScript%20Craftsman&descAlignY=58&descAlign=50&theme=light" />
     <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=190&section=header&text=Hi,%20I'm%20Arsyad%20Alghital" alt="Arsyad Alghital Banner" width="100%" />
   </picture>
 
-  <!-- ==================== SOCIAL & CONTACT BADGES ==================== -->
+  <!-- ==================== SOCIAL & NETWORK BADGES ==================== -->
   <p align="center">
     <a href="https://arsyad.site" target="_blank">
-      <img src="https://img.shields.io/badge/Website-arsyad.site-2563EB?style=flat-square&logo=safari&logoColor=white" alt="Website" />
+      <img src="https://img.shields.io/badge/Portfolio-arsyad.site-2563EB?style=flat-square&logo=safari&logoColor=white" alt="Website" />
     </a>
     <a href="https://linkedin.com/in/arsyadal" target="_blank">
       <img src="https://img.shields.io/badge/LinkedIn-arsyadal-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -18,16 +18,24 @@
     <a href="https://www.threads.com/@arsyadal_" target="_blank">
       <img src="https://img.shields.io/badge/Threads-@arsyadal__-000000?style=flat-square&logo=threads&logoColor=white" alt="Threads" />
     </a>
+    <a href="mailto:arsyad.alghital@gmail.com">
+      <img src="https://img.shields.io/badge/Email-arsyad.alghital@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
+    </a>
     <a href="https://github.com/arsyadal?tab=achievements" target="_blank">
       <img src="https://img.shields.io/badge/Achievements-Pull_Shark_x2_•_YOLO-F59E0B?style=flat-square&logo=github&logoColor=white" alt="GitHub Achievements" />
     </a>
   </p>
 
-  <!-- ==================== PROMO: BEAUTIFY-GH ==================== -->
+  <!-- ==================== FLAGSHIP PROMO: BEAUTIFY-GH ==================== -->
   <p align="center">
-    <a href="https://github.com/arsyadal/beautify-gh" target="_blank">
+    <a href="https://arsyadal.github.io/beautify-gh/" target="_blank">
       <img src="https://img.shields.io/badge/✨_Make_Ur_GitHub_Profile_Beautiful-Try_Beautify--GH-7C3AED?style=for-the-badge&logo=githubactions&logoColor=white" alt="Try Beautify-GH" />
     </a>
+  </p>
+
+  <!-- ==================== AESTHETIC LOFI ANIMATION ==================== -->
+  <p align="center">
+    <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" alt="Coding Animation" width="360" style="border-radius: 8px;" />
   </p>
 
 </div>
@@ -39,25 +47,25 @@
 ```text
 🏢 Organization : Toyota Motor Manufacturing Indonesia (TMMIN)
 📍 Location     : Karawang, Indonesia
-🌐 Portfolio    : https://arsyad.site
-⚡ Focus        : Systems programming in Rust, developer tooling, AI integrations & TypeScript architectures.
+🌐 Website      : https://arsyad.site
+⚡ Core Focus   : Systems programming in Rust, developer tooling, AI integrations & TypeScript architectures.
 💡 Philosophy   : "We are what we repeatedly do. Excellence, then, is not an act, but a habit."
 ```
 
-> 🔨 **Dedicated to the Craft:** Practicing 30+ minutes every day outside daily work to refine systems engineering, explore emerging technologies, and build open-source tools.
+> 🔨 **Dedicated to the Craft:** Committing 30+ minutes every day outside daily work to refine systems engineering, explore emerging technologies, and build open-source tools.
 
 ---
 
 ### 🚀 Featured Open Source Projects
 
-| Project | Description | Stack | Quick Links |
+| Project | Description & Impact | Tech Stack | Quick Links |
 | :--- | :--- | :--- | :---: |
-| **✨ [beautify-gh](https://github.com/arsyadal/beautify-gh)** | *Make your GitHub profile beautiful.* Modern open-source toolkit, zero-bug automations & generator. | `Markdown` `Actions` `Web` | [Generator →](https://arsyadal.github.io/beautify-gh) • [Repo](https://github.com/arsyadal/beautify-gh) |
-| **🦀 [db-eye](https://github.com/arsyadal/db-eye)** | Lightweight and blazingly fast database introspection & monitoring engine. | `Rust` `SQL` `CLI` | [Repository →](https://github.com/arsyadal/db-eye) |
-| **🦀 [contextlint](https://github.com/arsyadal/contextlint)** | Context analysis and automated linting utility for modern codebases. | `Rust` `AST` `Linter` | [Repository →](https://github.com/arsyadal/contextlint) |
-| **🤖 [runbook-ai](https://github.com/arsyadal/runbook-ai)** | AI-assisted operational runbooks and automated incident response runner. | `Rust` `LLM` `DevOps` | [Repository →](https://github.com/arsyadal/runbook-ai) |
-| **🚀 [cadsploy](https://github.com/arsyadal/cadsploy)** | Zero-downtime automated deployment orchestrator for modern applications. | `TypeScript` `Node.js` `CI/CD` | [Repository →](https://github.com/arsyadal/cadsploy) |
-| **🎛️ [quotatray](https://github.com/arsyadal/quotatray)** | System tray utility to monitor resource usage and cloud API rate limits. | `Rust` `Tauri` `System` | [Repository →](https://github.com/arsyadal/quotatray) |
+| **✨ [Beautify-GH](https://github.com/arsyadal/beautify-gh)** | *Make your GitHub profile beautiful.* Modern open-source toolkit, zero-bug automations & generator. | `Markdown` `Actions` `Web` | [Live App →](https://arsyadal.github.io/beautify-gh/) • [Repo](https://github.com/arsyadal/beautify-gh) |
+| **🦀 [ContextLint](https://github.com/arsyadal/contextlint)** | AI agent context linting & compression engine. Eliminates duplication and stale instructions. | `Rust` `AST` `CLI` | [Repository →](https://github.com/arsyadal/contextlint) |
+| **🦀 [DB-Eye](https://github.com/arsyadal/db-eye)** | Lightweight terminal UI database browser for SQLite, PostgreSQL, and MySQL exploration. | `Rust` `TUI` `Database` | [Repository →](https://github.com/arsyadal/db-eye) |
+| **🤖 [Runbook-AI](https://github.com/arsyadal/runbook-ai)** | AI-assisted operational runbooks and automated incident response runner. | `Rust` `LLM` `DevOps` | [Repository →](https://github.com/arsyadal/runbook-ai) |
+| **🎛️ [QuotaTray](https://github.com/arsyadal/quotatray)** | Local-first desktop tray app to monitor AI usage quotas, limits, and reset windows. | `Tauri` `React` `Rust` | [Repository →](https://github.com/arsyadal/quotatray) |
+| **🚀 [Cadsploy](https://github.com/arsyadal/cadsploy)** | Docker-first self-hosted deployment orchestrator with zero-downtime worker pipelines. | `Next.js` `Fastify` `Docker` | [Repository →](https://github.com/arsyadal/cadsploy) |
 
 ---
 
