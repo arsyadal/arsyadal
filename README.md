@@ -133,14 +133,13 @@
 
 ---
 
-### ✍️ Recent Articles & Activity
+### ✍️ Technical Writings & Engineering Notes
 
-<!-- BLOG-POST-LIST:START -->
- - [Speed Up Your CI/CD: ARM 64 Runners for GitHub Actions](https://dev.to/github/speed-up-your-cicd-arm-64-runners-for-github-actions-21g8) — _(May 15, 2025)_
- - [Showcase your open source project at SCALE 🐧 Pasadena, CA · March 6-9, 2025](https://dev.to/github/showcase-your-open-source-project-at-scale-pasadena-ca-march-6-9-2025-12kn) — _(Jan 24, 2025)_
- - [Release Radar · September 2024: Major updates from the open source community](https://dev.to/github/release-radar-september-2024-major-updates-from-the-open-source-community-30ki) — _(Oct 5, 2024)_
- - [A checklist and guide to get your repository collaboration-ready](https://dev.to/github/a-checklist-and-guide-to-get-your-repository-collaboration-ready-3eld) — _(Sep 18, 2024)_
- - [Provide context to GitHub Copilot Chat](https://dev.to/github/provide-context-to-github-copilot-chat-24op) — _(Sep 10, 2024)_<!-- BLOG-POST-LIST:END -->
+- 🦀 **[ContextLint: AI Context Linting & Compression](https://github.com/arsyadal/contextlint)** — *Scanning agent context files to eliminate duplication and noisy instructions.*
+- 🦀 **[DB-Eye: Terminal UI Database Browser](https://github.com/arsyadal/db-eye)** — *Fast schema & data exploration for SQLite, PostgreSQL, and MySQL directly in your CLI.*
+- 🎛️ **[QuotaTray: Local-First AI Quota Monitor](https://github.com/arsyadal/quotatray)** — *Monitoring AI provider limits and usage windows in a compact desktop tray.*
+- 🚀 **[Cadsploy: Docker-First Automated Deployment Platform](https://github.com/arsyadal/cadsploy)** — *Self-hosted zero-downtime deployment pipelines with Next.js & Fastify.*
+- 🌐 *Essays & technical deep-dives coming soon on [arsyad.site](https://arsyad.site).*
 
 <br />
 
